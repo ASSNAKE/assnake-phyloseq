@@ -1,0 +1,2 @@
+pheatmap_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/heatmap_{heatmap_preset}.pdf'
+pheatmap_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/heatmap_{heatmap_preset}.pdf'

@@ -1,0 +1,1 @@
+create-phyloseq_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/phyloseq.rds'

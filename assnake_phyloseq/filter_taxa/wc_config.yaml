@@ -1,2 +1,2 @@
-filter-taxa_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/step{step_num}_filter_taxa_by_detection_{detection_preset}_prevalence_{prevalence_preset}/phyloseq.rds'
-filter-taxa_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/step{step_num}_filter_taxa_by_detection_{detection_preset}_prevalence_{prevalence_preset}/phyloseq.rds'
+filter-taxa_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/filter_taxa_by_detection_{detection_preset}_prevalence_{prevalence_preset}/phyloseq.rds'
+filter-taxa_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/filter_taxa_by_detection_{detection_preset}_prevalence_{prevalence_preset}/phyloseq.rds'

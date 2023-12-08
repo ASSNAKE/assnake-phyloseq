@@ -2,7 +2,7 @@ rule transform_counts:
     input:
         ps = get_previous_step_output
     output:
-        transformed_ps = '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}step{step_num}_transform_{transformation_preset}/phyloseq.rds'
+        transformed_ps = '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}transform_{transformation_preset}/phyloseq.rds'
     params:
         transformation_method = '{transformation_preset}'
     wildcard_constraints:    

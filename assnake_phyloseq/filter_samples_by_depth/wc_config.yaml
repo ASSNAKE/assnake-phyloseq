@@ -1,2 +1,2 @@
-filter-samples-by-depth_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/step{step_num}_filter_samples_by_min_reads_{min_reads_preset}/phyloseq.rds'
-filter-samples-by-depth_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/step{step_num}_filter_samples_by_min_reads_{min_reads_preset}/phyloseq.rds'
+filter-samples-by-depth_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/filter_samples_by_min_reads_{min_reads_preset}/phyloseq.rds'
+filter-samples-by-depth_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/filter_samples_by_min_reads_{min_reads_preset}/phyloseq.rds'

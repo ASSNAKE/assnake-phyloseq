@@ -1,2 +1,2 @@
-transform-counts_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/step{step_num}_transform_{transformation_preset}/phyloseq.rds'
-transform-counts_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/step{step_num}_transform_{transformation_preset}/phyloseq.rds'
+transform-counts_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/transform_{transformation_preset}/phyloseq.rds'
+transform-counts_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/transform_{transformation_preset}/phyloseq.rds'

@@ -1,0 +1,2 @@
+barplot_facet_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/bar_facet_v0_tax{tax_level_preset}_n{n_taxa_preset}_facet{facet_variable_preset}_w{pdf_width_preset}_h{pdf_height_preset}.pdf'
+barplot_facet_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/bar_facet_v0_tax{tax_level_preset}_n{n_taxa_preset}_facet{facet_variable_preset}_w{pdf_width_preset}_h{pdf_height_preset}.pdf'

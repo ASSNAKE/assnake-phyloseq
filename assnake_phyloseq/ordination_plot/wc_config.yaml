@@ -1,0 +1,2 @@
+ordination_plot_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/ordination_plot_color{color_feature_preset}_tax{max_taxa_preset}_rank{rank_preset}_w{pdf_width_preset}_h{pdf_height_preset}.pdf'
+ordination_plot_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/ordination_plot_color{color_feature_preset}_tax{max_taxa_preset}_rank{rank_preset}_w{pdf_width_preset}_h{pdf_height_preset}.pdf'

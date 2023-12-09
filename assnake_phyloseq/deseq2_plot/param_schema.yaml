@@ -1,0 +1,29 @@
+formula:
+  type: string
+  description: The model formula for DESeq2 analysis.
+  default: sex + batch
+
+contrast_condition:
+  type: string
+  description: The condition for the DESeq2 contrast.
+  default: condition
+
+contrast_level1:
+  type: string
+  description: The first level for the DESeq2 contrast.
+  default: treated
+
+contrast_level2:
+  type: string
+  description: The second level for the DESeq2 contrast.
+  default: untreated
+
+alpha:
+  type: float
+  description: Significance level for determining differentially expressed taxa.
+  default: 0.05
+
+minlfc:
+  type: float
+  description: Minimum log fold change to consider a taxon as differentially expressed.
+  default: 1

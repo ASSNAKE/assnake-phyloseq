@@ -34,8 +34,8 @@ plot_bar_facet_v0 <- function(filepath, output_pdf, n_taxa = 20, tax_level = "Ge
     tax_fix(
       min_length = 3,
       unknowns = c("NA", "gingivalis", "haemolyticus", "oralis", "oris", "sputigena"),
-      sep = " ", anon_unique = TRUE,
-      suffix_rank = "classified"
+      sep = " "anon_unique = TRUE,
+      suffix_rank = "current"
     )
 
   p <- ps_obj %>%

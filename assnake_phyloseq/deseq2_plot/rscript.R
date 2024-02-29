@@ -6,7 +6,7 @@ save_deseq2_results <- function(ps_filepath, dds_out_file, params_yaml_path, sig
     library(DESeq2)
     library(ggplot2)
     library(ggpubr)
-    library(metasbm)
+    library(metasbmR)
 
 
     ps_obj <- readRDS(ps_filepath)

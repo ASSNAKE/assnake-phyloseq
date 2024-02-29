@@ -11,10 +11,10 @@ rule plot_detection_prevalence_heatmap:
         """
         Rscript -e " \
         library(phyloseq); \
-        library(metasbm); \
+        library(metasbmR); \
         library(ggplot2); \
         ps_obj <- readRDS('{input.ps}'); \
-        metasbm::plot_detection_prevalence_heatmap(ps_obj, \
+        metasbmR::plot_detection_prevalence_heatmap(ps_obj, \
                                                    filepath='{output.heatmap}'); \
         "
         """

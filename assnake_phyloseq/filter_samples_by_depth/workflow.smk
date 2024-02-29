@@ -12,15 +12,14 @@ rule filter_samples_by_depth:
         sample_set="[\w\d_-]+",
         
         filter_chain=".*",
-        step_num="\d+",
         min_reads_preset="\d+"
     shell:
         """
         Rscript -e " \
-        library(metasbm); \
+        library(metasbmR); \
         library(phyloseq); \
         ps_obj <- readRDS('{input.ps}'); \
-        filtered_ps_obj <- metasbm::filter_samples_by_depth(ps_obj, min_reads = as.numeric('{params.min_reads}')); \
+        filtered_ps_obj <- metasbmR::filter_samples_by_depth(ps_obj, min_reads = as.numeric('{params.min_reads}')); \
         saveRDS(filtered_ps_obj, '{output.filtered_ps}'); \
         "
         """

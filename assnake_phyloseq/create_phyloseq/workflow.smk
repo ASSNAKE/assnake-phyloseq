@@ -3,7 +3,7 @@ rule create_phyloseq:
         seqtab = '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/asv_table.rds',
         taxa   = '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/taxa.rds'
     output: 
-        ps     = '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/phyloseq.rds',
+        ps     = '{fs_prefix}/{df}/feature_tables/{sample_set}/dada2_{ft_name}/phyloseq.rds',
         fasta     = '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/asvs.fa',
     wildcard_constraints:    
         df="[\w\d_-]+",

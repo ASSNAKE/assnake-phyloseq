@@ -15,17 +15,16 @@ rule filter_taxa:
         sample_set="[\w\d_-]+",
 
         filter_chain=".*",
-        step_num="\d+",
-        detection_preset="\d+",
+        detection_preset="\d.+",
         prevalence_preset="[^/]+"
     shell:
         """
         Rscript -e " \
-        library(metasbm); \
+        library(metasbmR); \
         library(phyloseq); \
         library(microbiome); \
         ps_obj <- readRDS('{input.ps}'); \
-        filtered_ps_obj <- metasbm::filter_taxa(ps_obj, detection = as.numeric('{params.detection}'), prevalence = as.numeric('{params.prevalence}')); \
+        filtered_ps_obj <- metasbmR::filter_taxa(ps_obj, detection = as.numeric('{params.detection}'), prevalence = as.numeric('{params.prevalence}')); \
         saveRDS(filtered_ps_obj, '{output.filtered_ps}'); \
         "
         """

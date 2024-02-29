@@ -7,8 +7,8 @@ plot_ordination <- function(filepath, output_pdf, color_feature = "batch_x", max
 
   ps_obj <- ps_obj %>%
     tax_fix(
-      min_length = 3,
-      unknowns = c("NA", "gingivalis", "haemolyticus", "oralis", "oris", "sputigena", "intermedia", "shahii"),
+      min_length = 1,
+      unknowns = c("Catenibacterium", "Lawsonibacter"),
       sep = " ", anon_unique = TRUE,
       suffix_rank = "current"
     )

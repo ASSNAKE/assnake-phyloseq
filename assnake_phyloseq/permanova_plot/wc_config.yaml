@@ -1,0 +1,2 @@
+permanova_plot_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/permanova_{preset}_plot.pdf'
+permanova_plot_source_wc: '{fs_prefix}/{df}/feature_tables/{sample_set}/{ft_name}/{filter_chain}/phyloseq.rds'

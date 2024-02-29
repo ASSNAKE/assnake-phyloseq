@@ -12,9 +12,9 @@ rule plot_microbiome_heatmap:
         Rscript -e " \
         library(phyloseq); \
         library(pheatmap); \
-        devtools::load_all('~/ProjectsGit/metasbm/'); \
+        library(metasbmR); \
         ps_obj <- readRDS('{input.ps}'); \
-        metasbm::plot_microbiome_heatmap(ps_obj, \
+        metasbmR::plot_microbiome_heatmap(ps_obj, \
                                          base_dir='{wildcards.fs_prefix}', \
                                          perform_clustering=as.logical('FALSE'), \
                                          filename='{output.heatmap}'); \

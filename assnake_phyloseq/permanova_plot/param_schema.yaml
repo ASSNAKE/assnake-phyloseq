@@ -1,0 +1,14 @@
+formula:
+  type: string
+  description: The model formula for PERMANOVA analysis.
+  default: batch
+
+transformation:
+  type: string
+  description: The transformation method to apply.
+  default: compositional
+
+method:
+  type: string
+  description: The method used for distance calculation in PERMANOVA.
+  default: bray

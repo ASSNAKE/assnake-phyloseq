@@ -20,7 +20,7 @@ filter_phyloseq_by_sample_count <- function(ps_obj, facet_variable, min_sample_c
 }
 
 
-plot_bar_facet_v0 <- function(filepath, output_pdf, n_taxa = 20, tax_level = "Genus", facet_variable = "batch_x", pdf_width = 300, pdf_height = 135) {
+plot_bar_facet_v0 <- function(filepath, output_pdf, n_taxa = 20, tax_level = "Genus", facet_variable = "batch", pdf_width = 300, pdf_height = 135) {
   library(phyloseq)
   library(ggplot2)
   library(dplyr)
@@ -34,7 +34,7 @@ plot_bar_facet_v0 <- function(filepath, output_pdf, n_taxa = 20, tax_level = "Ge
     tax_fix(
       min_length = 3,
       unknowns = c("NA", "gingivalis", "haemolyticus", "oralis", "oris", "sputigena"),
-      sep = " "anon_unique = TRUE,
+      sep = " ", anon_unique = TRUE,
       suffix_rank = "current"
     )
 
